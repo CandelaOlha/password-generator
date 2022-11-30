@@ -56,19 +56,14 @@ body {
   padding: 40px 0;
 }
 
-.password-container {
-  align-items: center;
+.random-password {
   background-color: #273549;
   border-radius: 6px;
-  display: flex;
-  justify-content: center;
-  margin-right: 20px;
-  padding: 12px 18px;
-}
-
-.random-password {
   color: #55f991;
+  display: none;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 600;
+  margin-right: 20px;
+  padding: 12px 18px;
 }
