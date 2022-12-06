@@ -114,6 +114,7 @@ generatePasswordButton.onclick = () => {
 
 const copyToClipboard = (password) => {
   navigator.clipboard.writeText(password);
+  alert("Password copied to clipboard");
 };
 
 randomPassword1.addEventListener("click", () => {
