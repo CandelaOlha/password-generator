@@ -92,7 +92,7 @@ const characters = [
   "/",
 ];
 
-const generatePasswordButton = document.querySelector("#generatePasswordButton");
+const generatePasswordButton = document.querySelector( "#generatePasswordButton");
 const randomPassword1 = document.querySelector("#randomPassword1");
 const randomPassword2 = document.querySelector("#randomPassword2");
 
@@ -111,3 +111,15 @@ generatePasswordButton.onclick = () => {
   randomPassword1.style.display = "block";
   randomPassword2.style.display = "block";
 };
+
+const copyToClipboard = (password) => {
+  navigator.clipboard.writeText(password);
+};
+
+randomPassword1.addEventListener("click", () => {
+  copyToClipboard(randomPassword1.textContent);
+});
+
+randomPassword2.addEventListener("click", () => {
+  copyToClipboard(randomPassword2.textContent);
+});
