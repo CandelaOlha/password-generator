@@ -68,3 +68,27 @@ body {
   margin-right: 20px;
   padding: 12px 18px;
 }
+
+.random-password:hover {
+  color: #b0fccc;
+}
+
+/* Responsive styles */
+
+@media screen and (max-width: 700px) {
+  .title {
+    width: auto;
+  }
+  .passwords-container {
+    flex-direction: column;
+  }
+  .random-password {
+    margin: 0 0 20px 0;
+  }
+}
+
+@media screen and (max-width: 418px) {
+  .title {
+    font-size: 48px;
+  }
+}
